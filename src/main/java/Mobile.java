@@ -3,6 +3,12 @@ public class Mobile {
     private String color;
     private String brand;
 
+    public Mobile(String name, String color, String brand) {
+        this.name = name;
+        this.color = color;
+        this.brand = brand;
+    }
+
     public String getColor() {
         return color;
     }
@@ -29,5 +35,15 @@ public class Mobile {
 
     public void call (String message){
         System.out.println("Message : " + message);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Mobile{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
     }
 }

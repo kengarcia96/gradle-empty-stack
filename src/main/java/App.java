@@ -8,5 +8,14 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        iPhone cat = new iPhone();
+        cat.call("Test");
+
+        Mobile mobile = new Mobile();
+        mobile.getBrand();
+        mobile.getColor();
+        mobile.getName();
+
     }
 }
