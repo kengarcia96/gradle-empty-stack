@@ -6,7 +6,13 @@ public class iPhone extends Mobile {
 
     @Override
     public void call (String message){
-        System.out.println("<iPhone>Message : " + message);
+        if (message.length() < 15){
+            System.out.println("<iPhone>Message : " + message);
+        }
+
+        else{
+            System.out.println("<iPhone> Message cannot be sent");
+        }
     }
 
 

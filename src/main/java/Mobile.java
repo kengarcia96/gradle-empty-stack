@@ -37,13 +37,7 @@ public class Mobile {
         System.out.println("Message : " + message);
     }
 
-
-    @Override
-    public String toString() {
-        return "Mobile{" +
-                "name='" + name + '\'' +
-                ", color='" + color + '\'' +
-                ", brand='" + brand + '\'' +
-                '}';
+    public void mobileInfo() {
+        System.out.println("Mobile{" + "name='" + name + '\'' +  ", color='" + color + '\'' +  ", brand='" + brand + '\'' + '}');
     }
 }

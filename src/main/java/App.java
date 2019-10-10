@@ -9,13 +9,22 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        iPhone cat = new iPhone();
-        cat.call("Test");
+        iPhone phone2 = new iPhone("iPhone 7", "Green", "iPhone");
+        phone2.call("test");
+        Android phone3 = new Android ("S10", "Green", "Android");
 
-        Mobile mobile = new Mobile();
-        mobile.getBrand();
-        mobile.getColor();
-        mobile.getName();
+        phone2.mobileInfo();
+        phone3.mobileInfo();
 
+        Person name = new Person();
+        name.setName("Kenneth");
+        name.setMobile(phone3);
+        name.makeACall("Test message");
+
+        iPhoneRobot iRobot = new iPhoneRobot();
+        iRobot.setMobile(phone2);
+        iRobot.checkMobile();
+        iRobot.setMobile(phone3);
+        iRobot.checkMobile();
     }
 }
